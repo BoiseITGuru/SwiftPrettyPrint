@@ -162,9 +162,9 @@ extension Pretty {
 
     // MARK: - private
 
-    private typealias Printer = (String?, [Any], String, Option, Bool) -> String
+    public typealias Printer = (String?, [Any], String, Option, Bool) -> String
 
-    private static func _output(
+    public static func _output(
         printer: Printer,
         label: String?,
         _ targets: [Any],
@@ -192,7 +192,7 @@ extension Pretty {
         #endif
     }
 
-    private static func _print(
+    public static func _print(
         label: String?,
         _ targets: [Any],
         separator: String,
@@ -205,7 +205,7 @@ extension Pretty {
             }.joined(separator: separator)
     }
 
-    private static func _prettyPrint(
+    public static func _prettyPrint(
         label: String?,
         _ targets: [Any],
         separator: String,
@@ -218,7 +218,7 @@ extension Pretty {
             }.joined(separator: separator)
     }
 
-    private static func _printDebug(
+    public static func _printDebug(
         label: String?,
         _ targets: [Any],
         separator: String,
@@ -231,7 +231,7 @@ extension Pretty {
             }.joined(separator: separator)
     }
 
-    private static func _prettyPrintDebug(
+    public static func _prettyPrintDebug(
         label: String?,
         _ targets: [Any],
         separator: String,
