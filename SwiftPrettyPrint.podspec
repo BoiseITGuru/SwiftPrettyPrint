@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   This provide more readable print than standard `print` and `debugPrint`.
   DESC
 
-  spec.homepage     = "https://github.com/YusukeHosonuma/SwiftPrettyPrint"
+  spec.homepage     = "https://github.com/BoiseITGuru/SwiftPrettyPrint"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   spec.author             = { "Yusuke Hosonuma" => "tobi462@gmail.com" }
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = "5.0"
   spec.tvos.deployment_target    = "12.0"
 
-  spec.source       = { :git => "https://github.com/YusukeHosonuma/SwiftPrettyPrint.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/BoiseITGuru/SwiftPrettyPrint.git", :tag => "#{spec.version}" }
 
   spec.source_files = "Sources/**/*.{swift}"
 
